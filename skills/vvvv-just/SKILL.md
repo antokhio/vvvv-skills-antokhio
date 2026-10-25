@@ -233,15 +233,5 @@ it does not create, publish, or copy a NuGet package.
 - Read repository test instructions before running tests; do not add a full test
   suite invocation as an incidental recipe validation step.
 
-## Reference cases
-
-- [Hronomapper recipes](../../../.justfile) demonstrate separate editor/server/plugin
-  targets, explicit C# dependency sets, compiler exports, and plugin staging.
-  Their current `build`/`package` names are historical, not the naming template.
-- [RMI Guide recipes](../../../../../___rmi/rmi-guide/.justfile) demonstrate editable
-  packages during dev, vvvvc app builds, assets copied beside the executable,
-  and a packaged-run working directory. Its separate library recipe is not a
-  substitute for wiring C# prerequisites into dev and build.
-
 Use these as patterns, not values to copy. Patch names, package IDs, service
 requirements, SDK paths, and installed vvvv versions belong to each project.
